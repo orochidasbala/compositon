@@ -1,0 +1,39 @@
+{
+    "languages": [
+        {
+            "id": 1,
+            "languageName": "HTML",
+            "usage": "FrontEnd"
+        },
+        {
+            "id": 2,
+            "languageName": "CSS",
+            "usage": "FrontEnd"
+        },
+        {
+            "id": 3,
+            "languageName": "BootStrap",
+            "usage": "FrontEnd"
+        },
+        {
+            "id": 4,
+            "languageName": "JavaScript",
+            "usage": "FrontEnd"
+        },
+        {
+            "id": 5,
+            "languageName": "VueJs",
+            "usage": "FrontEnd"
+        },
+        {
+            "id": 6,
+            "languageName": "PHP",
+            "usage": "BackEnd"
+        },
+        {
+            "id": 7,
+            "languageName": "Laravel",
+            "usage": "BackEnd"
+        }
+    ]
+}
