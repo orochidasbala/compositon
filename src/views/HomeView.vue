@@ -1,11 +1,14 @@
 <template>
     <h1>Home Page</h1>
     <h3>Web Developing Languages</h3>
-    <div v-if="search">
+    <div v-if="languages.length > 0">
         <SingleType :filterLangs="filterLangs" />
         <div v-if="error">
             <p>{{ error }}</p>
         </div>
+    </div>
+    <div v-else>
+        <p>Loading datas...</p>
     </div>
     <input type="search" v-model="search" placeholder="type to search" />
 
@@ -14,29 +17,13 @@
 
 <script>
 import SingleType from "../components/SingleType";
-import { ref } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
+import getLanguages from "../composables/getLanguages";
+
 export default {
     components: { SingleType },
     setup() {
-        let languages = ref([]);
-        let search = ref("");
-        let error = ref("");
-
-        let load = async () => {
-            try {
-                let response = await fetch(" http://localhost:3000/languages");
-                if (response.status === 404) {
-                    throw new Error(
-                        "Ur link is something wrong! Datas not found"
-                    );
-                }
-                let datas = await response.json();
-                languages.value = datas;
-            } catch (err) {
-                error.value = err.message;
-            }
-        };
+        let { languages, search, error, load } = getLanguages();
         load();
 
         let filterLangs = computed(() => {
@@ -44,7 +31,6 @@ export default {
                 return name.usage.includes(search.value);
             });
         });
-        console.log(error.value);
         return { languages, search, filterLangs, error };
     },
 };
