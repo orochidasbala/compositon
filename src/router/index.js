@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Detail from '../views/DetailsLanguages'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/languages/:id',
+    name: "Detail",
+    component: Detail,
+    props: true
   }
 ]
 

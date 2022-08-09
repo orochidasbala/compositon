@@ -8,7 +8,13 @@
             </tr>
             <tr v-for="lang in language" :key="lang.id">
                 <td>{{ lang.id }}</td>
-                <td>{{ lang.languageName }}</td>
+                <td>
+                    <router-link
+                        class="linkText"
+                        :to="{ name: 'Detail', params: { id: lang.id } }"
+                        >{{ lang.languageName }}</router-link
+                    >
+                </td>
                 <td>{{ lang.usage }}</td>
             </tr>
         </table>
@@ -22,6 +28,10 @@ export default {
 </script>
 
 <style>
+.linkText {
+    text-decoration: none;
+    text-align: left;
+}
 .table {
     display: flex;
     justify-content: center;
