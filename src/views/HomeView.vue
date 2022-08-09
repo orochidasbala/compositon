@@ -8,7 +8,9 @@
         </div>
     </div>
     <div v-else>
-        <p>Loading datas...</p>
+        <p>
+            <SpiNner></SpiNner>
+        </p>
     </div>
     <input type="search" v-model="search" placeholder="type to search" />
 
@@ -16,12 +18,16 @@
 </template>
 
 <script>
+import SpiNner from "../components/SpiNner";
 import SingleType from "../components/SingleType";
 import { computed } from "@vue/runtime-core";
 import getLanguages from "../composables/getLanguages";
 
 export default {
-    components: { SingleType },
+    components: {
+        SpiNner,
+        SingleType,
+    },
     setup() {
         let { languages, search, error, load } = getLanguages();
         load();

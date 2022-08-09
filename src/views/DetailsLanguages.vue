@@ -5,13 +5,17 @@
         <p>{{ detail.usage }} language</p>
         <p>{{ detail.body }}</p>
     </div>
-    <div v-else>loading..</div>
+    <div v-else>
+        <SpiNner></SpiNner>
+    </div>
 </template>
 
 <script>
+import SpiNner from "../components/SpiNner";
 import getDetail from "../composables/getDetail";
 
 export default {
+    components: { SpiNner },
     props: ["id"],
     setup(props) {
         let { detail, error, load } = getDetail(props.id);
