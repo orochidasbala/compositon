@@ -42,10 +42,16 @@ export default {
 };
 </script>
 <style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 input {
+    width: 50%;
     border: none;
     background-color: #eee;
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px 20px;
     border-radius: 10px;
 }

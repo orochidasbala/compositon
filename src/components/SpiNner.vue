@@ -1,5 +1,6 @@
 <template>
     <div class="spin"></div>
+    <p>loading...</p>
 </template>
 
 <script>
@@ -13,6 +14,7 @@ export default {};
     border: 2px solid transparent;
     border-radius: 50%;
     border-top-color: crimson;
+    border-bottom-color: crimson;
     margin: 30px auto;
     animation: spin 1s infinite;
 }

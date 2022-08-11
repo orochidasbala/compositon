@@ -1,46 +1,58 @@
 {
-    "languages": [
-        {
-            "id": 1,
-            "languageName": "HTML",
-            "usage": "FrontEnd",
-            "body": "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables."
-        },
-        {
-            "id": 2,
-            "languageName": "CSS",
-            "usage": "FrontEnd",
-            "body": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language."
-        },
-        {
-            "id": 3,
-            "languageName": "BootStrap",
-            "usage": "FrontEnd",
-            "body": "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions."
-        },
-        {
-            "id": 4,
-            "languageName": "JavaScript",
-            "usage": "FrontEnd",
-            "body": "JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors."
-        },
-        {
-            "id": 5,
-            "languageName": "VueJs",
-            "usage": "FrontEnd",
-            "body": "Vue. js is a progressive framework for JavaScript used to build web interfaces and one-page applications. Not just for web interfaces, Vue. js is also used both for desktop and mobile app development with Electron framework."
-        },
-        {
-            "id": 6,
-            "languageName": "PHP",
-            "usage": "BackEnd",
-            "body": "PHP is an amazing and popular language! It is powerful enough to be at the core of the biggest blogging system on the web (WordPress)! It is deep enough to run large social networks! It is also easy enough to be a beginner's first server side language!"
-        },
-        {
-            "id": 7,
-            "languageName": "Laravel",
-            "usage": "BackEnd",
-            "body": "Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality."
-        }
-    ]
+  "languages": [
+    {
+      "id": 1,
+      "languageName": "HTML",
+      "usage": "FrontEnd",
+      "detail": "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables."
+    },
+    {
+      "id": 2,
+      "languageName": "CSS",
+      "usage": "FrontEnd",
+      "detail": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language."
+    },
+    {
+      "id": 3,
+      "languageName": "BootStrap",
+      "usage": "FrontEnd",
+      "detail": "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions."
+    },
+    {
+      "id": 4,
+      "languageName": "JavaScript",
+      "usage": "FrontEnd",
+      "detail": "JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors."
+    },
+    {
+      "id": 5,
+      "languageName": "VueJs",
+      "usage": "FrontEnd",
+      "detail": "Vue. js is a progressive framework for JavaScript used to build web interfaces and one-page applications. Not just for web interfaces, Vue. js is also used both for desktop and mobile app development with Electron framework."
+    },
+    {
+      "id": 6,
+      "languageName": "PHP",
+      "usage": "BackEnd",
+      "detail": "PHP is an amazing and popular language! It is powerful enough to be at the core of the biggest blogging system on the web (WordPress)! It is deep enough to run large social networks! It is also easy enough to be a beginner's first server side language!"
+    },
+    {
+      "id": 7,
+      "languageName": "Laravel",
+      "usage": "BackEnd",
+      "detail": "Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality."
+    },
+    {
+      "languageName": "Python",
+      "detail": "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.",
+      "usage": "Multi",
+      "tags": [
+        "BackEnd",
+        "FrontEnd",
+        "Desktop Application",
+        "Web App"
+      ],
+      "id": 8
+    }
+  ]
 }

@@ -3,7 +3,7 @@
         <h1>{{ detail.languageName }}</h1>
         <h3>Detail</h3>
         <p>{{ detail.usage }} language</p>
-        <p>{{ detail.body }}</p>
+        <p>{{ detail.detail }}</p>
     </div>
     <div v-else>
         <SpiNner></SpiNner>

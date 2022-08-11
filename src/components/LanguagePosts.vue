@@ -15,7 +15,9 @@
                         >{{ lang.languageName }}</router-link
                     >
                 </td>
-                <td>{{ lang.usage }}</td>
+                <td>
+                    {{ lang.usage }}
+                </td>
             </tr>
         </table>
     </div>
@@ -28,6 +30,11 @@ export default {
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .linkText {
     text-decoration: none;
     text-align: left;
