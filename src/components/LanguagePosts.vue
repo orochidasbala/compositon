@@ -37,7 +37,6 @@ export default {
 }
 .linkText {
     text-decoration: none;
-    text-align: left;
 }
 .table {
     display: flex;
@@ -45,23 +44,31 @@ export default {
     align-items: center;
 }
 table {
-    align-items: center;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
+    /* align-items: center; */
+    font-family: "Poppins", sans-serif;
+    /* border-collapse: collapse; */
     width: 70%;
 }
 th {
-    text-align: center;
     border: 1px solid #dddddd;
     padding: 10px;
     background-color: #54d1a1;
 }
 td {
     border: 1px solid #dddddd;
-    text-align: center;
     padding: 8px;
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #dddddd;
+    border-radius: 10px;
+}
+.table table tr td a {
+    color: #197e57;
+}
+table,
+th,
+td {
+    border-radius: 10px;
+    margin: 5px;
 }
 </style>

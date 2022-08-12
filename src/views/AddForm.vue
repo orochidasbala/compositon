@@ -26,8 +26,10 @@
 
 <script>
 import { ref } from "@vue/reactivity";
+import { useRouter } from "vue-router";
 export default {
     setup() {
+        let router = useRouter(); //this.$router
         let languageName = ref("");
         let detail = ref("");
         let usage = ref("");
@@ -55,6 +57,7 @@ export default {
                     tags: tags.value,
                 }),
             });
+            router.push("/");
         };
 
         return {
@@ -75,6 +78,12 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1 {
+    font-family: "Philosopher", sans-serif;
+    text-align: center;
+    margin: 30px;
+    color: #777;
 }
 .parent {
     /* display: ; */
