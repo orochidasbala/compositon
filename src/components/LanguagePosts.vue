@@ -5,10 +5,11 @@
                 <th>No.</th>
                 <th>Language</th>
                 <th>Usage</th>
+                <th>Tags</th>
             </tr>
             <tr v-for="lang in language" :key="lang.id">
-                <td>{{ lang.id }}</td>
-                <td>
+                <td class="no">{{ lang.id }}</td>
+                <td width="200px">
                     <router-link
                         class="linkText"
                         :to="{ name: 'Detail', params: { id: lang.id } }"
@@ -18,12 +19,21 @@
                 <td>
                     {{ lang.usage }}
                 </td>
+                <td>
+                    <span v-for="tag in lang.tags" :key="tag">
+                        <router-link
+                            :to="{ name: 'Tag', params: { tag } }"
+                            class="tags"
+                            >{{ tag }}</router-link
+                        >
+                    </span>
+                </td>
             </tr>
         </table>
     </div>
 </template>
 
-<script>
+<script scoped>
 export default {
     props: ["language"],
 };
@@ -35,19 +45,16 @@ export default {
     padding: 0;
     box-sizing: border-box;
 }
+.no {
+    text-align: center;
+}
 .linkText {
     text-decoration: none;
-}
-.table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 table {
     /* align-items: center; */
     font-family: "Poppins", sans-serif;
     /* border-collapse: collapse; */
-    width: 70%;
 }
 th {
     border: 1px solid #dddddd;
@@ -58,17 +65,37 @@ td {
     border: 1px solid #dddddd;
     padding: 8px;
 }
+
 tr:nth-child(odd) {
     background-color: #dddddd;
+    border-radius: 10px;
+}
+tr:nth-child(even) {
+    background-color: transparent;
     border-radius: 10px;
 }
 .table table tr td a {
     color: #197e57;
 }
-table,
+.table table tr td span a {
+    color: #197e57;
+    text-decoration: none;
+}
+
 th,
 td {
     border-radius: 10px;
     margin: 5px;
+}
+.tags {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    margin: auto 5px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #444;
 }
 </style>

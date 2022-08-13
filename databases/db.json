@@ -1,60 +1,83 @@
 {
     "languages": [
         {
-            "id": 1,
-            "languageName": "HTML",
-            "usage": "Structure",
-            "detail": "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables."
-        },
-        {
-            "id": 2,
-            "languageName": "CSS",
-            "usage": "Style",
-            "detail": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language."
-        },
-        {
-            "id": 3,
-            "languageName": "BootStrap",
-            "usage": "Style Framework",
-            "detail": "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions."
-        },
-        {
-            "id": 4,
-            "languageName": "JavaScript",
-            "usage": "Features",
-            "detail": "JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors."
-        },
-        {
-            "id": 5,
-            "languageName": "VueJs",
-            "usage": "FrontEnd JS Framework",
-            "detail": "Vue. js is a progressive framework for JavaScript used to build web interfaces and one-page applications. Not just for web interfaces, Vue. js is also used both for desktop and mobile app development with Electron framework."
-        },
-        {
-            "id": 6,
-            "languageName": "PHP",
-            "usage": "Server Side",
-            "detail": "PHP is an amazing and popular language! It is powerful enough to be at the core of the biggest blogging system on the web (WordPress)! It is deep enough to run large social networks! It is also easy enough to be a beginner's first server side language!"
-        },
-        {
-            "id": 7,
-            "languageName": "Laravel",
-            "usage": "BackEnd PHP Framework",
-            "detail": "Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality."
-        },
-        {
             "languageName": "Python",
-            "detail": "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.",
-            "usage": "Multiple",
-            "tags": ["BackEnd", "FrontEnd", "Desktop Application", "Web App"],
+            "detail": "Developed by Guido van Rossum in the 1990s, the multi-purpose high-level Python has grown extremely fast over the years to become one of the most popular programming languages today.\n\nAnd the number one reason for Python’s popularity is its beginner-friendliness, which allows anyone, even individuals with no programming background, to pick up Python and start creating simple programs.\n\nBut that’s not all. It also offers an exceptionally vast collection of packages and libraries that can play a key role in reducing the ETA for your projects, along with a strong community of like-minded developers that is eager to help.",
+            "usage": "Artificial Intelligence & Machine Learning",
+            "tags": ["Web", "Desktop"],
+            "id": 1
+        },
+        {
+            "languageName": "Javascript",
+            "detail": "JavaScript was one of the key programming languages alongside HTML and CSS that helped build the internet. JavaScript was created in 1995 by Netscape, the company that released the famous Netscape Navigator browser, to eliminate the crudeness of static web pages and add a pinch of dynamic behavior to them.\n\nToday, JavaScript has become a high-level multi-paradigm programming language that serves as the world’s top frontend programming language for the web, handling all the interactions offered by the webpages, such as pop-ups, alerts, events, and many more like them.",
+            "usage": "Rich Interactive Web Development",
+            "tags": ["Web", "Desktop", "Frontend Scripting"],
+            "id": 2
+        },
+        {
+            "languageName": "Java",
+            "detail": "Created by Sun Microsystems’ James Gosling in 1995, the object-oriented programming language Java has been serving as a secure, reliable, and scalable tool for developers ever since.\n\nSome of the features offered by Java that make it more preferable than several other programming languages are its garbage collection capabilities, backward compatibility, platform independence via JVM, portability, and high performance.\n\nJava’s popularity can be seen clearly among the Fortune 500 members as 90% of them use Java to manage their business efficiently.",
+            "usage": "Enterprise Application Development",
+            "tags": ["Web", "Mobile", "Desktop"],
+            "id": 3
+        },
+        {
+            "languageName": "R",
+            "detail": "If you do any sort of data analysis or work on Machine Learning projects, the chances are that you may have heard about R. The R programming language was first released to the public in 1993 by its creators Ross Ihaka and Robert Gentleman as an implementation of the S programming language with a special focus on statistical computing and graphical modeling.\n\nOver the years, R became one of the best programming languages for projects requiring extensive data analysis, graphical data modeling, spatial and time-series analysis.\n\nR also provides great extensibility via its functions and extensions that offer a ton of specialized techniques and capabilities to developers. The language also works remarkably well with code from other programming languages, such as C, C++, Python, Java, and .NET.",
+            "usage": "Data Analysis",
+            "tags": ["mainly desktop"],
+            "id": 4
+        },
+        {
+            "languageName": "C/C++",
+            "detail": "Believe it or not, the programming languages C/C++ were all the rage in the very late 20th century. Why?\n\nIt’s because C and C++ are both very low-level programming languages, offering blazing fast performance, which is why they were and are still being used to develop operating systems, file systems, and other system-level applications.\n\nWhile C was released in the 70s by Dennis Ritchie, C++, an extension to C with classes and many other additions, such as object-oriented features, was released later by Bjarne Stroustrup in the mid-80s. \n\nEven after close to 50 years, both the programming languages are still being used to create rock-steady and some of the fastest applications of all times.\n\nWhat this language is used for — \n\nAs C & C++ both offer full access to the underlying hardware, they have been used to create a wide variety of applications and platforms, such as system applications, real-time systems, IoT, embedded systems, games, cloud, containers, and more.",
+            "usage": "Operating Systems and System Tools",
+            "tags": ["Mobile", "Desktop", "Embedded"],
+            "id": 5
+        },
+        {
+            "languageName": "Golang",
+            "detail": "Go, or Golang, is a compiled programming language developed by the search giant Google. Created in 2009, Golang is an effort by the designers at Google to eliminate all the faults in the languages used throughout the organization and by keeping all the best features intact.\n\nGolang is fast and has a simple syntax, allowing anyone to pick up the programming language. It also comes with cross-platform support, making it easy and efficient to use.\n\nGo claims to offer a mix of high-performance like C/C++, simplicity, and usability like Python, along with efficient concurrency handling like Java.\n\nWhat this language is used for — \n\nGo is primarily used in back-end technologies, cloud services, distributed networks, IoT, but it has also been used to create console utilities, GUI applications, and web applications.",
+            "usage": "Server-Side Programming",
+            "tags": ["cross plateform", "mainly desktop"],
+            "id": 6
+        },
+        {
+            "languageName": "C#",
+            "detail": "C# was Microsoft’s approach to developing a programming language similar to the object-oriented C as part of its .NET initiative. The general-purpose multi-paradigm programming language was unveiled in 2000 by Anders Hejlsberg and has a syntax similar to C, C++, and Java. \n\nThis was a huge plus point for developers who were familiar with either of these languages. It also offered relatively faster compilation and execution along with seamless scalability.\n\nC# was designed keeping in mind the .NET ecosystem, which allows developers to access a range of libraries and frameworks offered by Microsoft. And with the integration with Windows, C# becomes extremely easy to use, even perfect for developing Windows-based apps.\n\nWhat this language is used for — \n\nDevelopers can use C# for a range of projects, including game development, server-side programming, web development, creating web forms, mobile applications, and more. C# has also been used to develop apps for the Windows platform, specifically Windows 8 and 10.",
+            "usage": "Application & Web Development Using .NET",
+            "tags": [
+                "cross platform",
+                "mobile and enterprise software applications"
+            ],
+            "id": 7
+        },
+        {
+            "languageName": "PHP",
+            "detail": "Just like Guido van Rossum’s Python, PHP also came to fruition as a side project by Rasmus Lerdorf, with the initial development dating back to the year 1994.\n\nRasmus’s version of PHP was originally intended to help him maintain his personal homepage, but over the years, the project evolved to support web forms and databases.\n\nToday, PHP has become a general-purpose scripting language that’s being used around the globe, primarily for server-side web development. It is fast, simple, and is platform-independent, along with a large open-source software community.\n\nWhat this language is used for — \n\nA large number of companies are using PHP today to create tools like CMS (Content Management Systems), eCommerce platforms, and web applications. PHP also makes it extremely easy to create web pages in an instant.",
+            "usage": " Web Development",
+            "tags": [
+                "cross plateform",
+                "Desktop",
+                "Mobile",
+                "Web",
+                "Backend Scripting"
+            ],
             "id": 8
         },
         {
-            "languageName": "C++",
-            "detail": "Be it Microsoft Windows or Mac OSX or Linux - all of them are programmed in C++. C/C++ is the backbone of all the well-known operating systems owing to the fact that it is a strongly typed and a fast programming language which makes it an ideal choice for developing an operating system. Moreover, C is quite close to the assembly language which further helps in writing low-level operating system modules.\n\n",
-            "usage": "Desktop Application and more",
-            "tags": ["application", "artificial intelligent", "robot"],
+            "languageName": "SQL",
+            "detail": "SQL, short for Structured Query Language, is probably one of the most crucial programming languages on this list.\n\nDesigned by Donald D. Chamberlin and Raymond F. Boyce in 1974, the special-purpose programming language has played a key role in enabling developers to create and manage tables and databases for storing relational data over hundreds of thousands of data fields.\n\nWithout SQL, organizations would have to rely on older and possibly slower methods of storing and accessing vast amounts of data. With SQL, much of these tasks can be done within seconds.\n\nOver the years, SQL has helped spawn a large number of RDBMS (Relational Database Management Systems) that offer much more than just the creation of tables and databases.\n\nWhat this language is used for — \n\nPretty much every other project or industry that needs to deal with large amounts of data stored in tables or databases uses SQL through an RDBMS.",
+            "usage": "Data Management   ",
+            "tags": ["Backend", "Data Management"],
             "id": 9
+        },
+        {
+            "languageName": "Swift",
+            "detail": "Apple’s full control over its hardware and software has allowed it to deliver smooth and consistent experiences across its range of devices. And that’s where Swift comes in.\n\nSwift is Apple’s own programming language that was released in 2014 as a replacement for its Objective-C programming language. It is a multi-paradigm general-purpose programming language that’s extremely efficient and designed to improve developer productivity.\n\nSwift is a modern programming language (newest on this list), fast, powerful, and offers full interoperability with Objective-C. Over the years, Swift received numerous updates that helped it gain significant popularity among Apple’s iOS, macOS, watchOS, and tvOS platforms.\n\nWhat this language is used for — \n\nPaired with Apple’s Cocoa and Cocoa Touch framework, Swift can be used to create apps for virtually every Apple device, such as iPhones, iPads, Mac, Watch, and other devices.",
+            "usage": "For Mobile App Development on iOS",
+            "tags": ["Mobile", "IOS App Specially"],
+            "id": 10
         }
     ]
 }

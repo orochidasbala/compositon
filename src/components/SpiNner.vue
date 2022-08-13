@@ -1,6 +1,5 @@
 <template>
     <div class="spin"></div>
-    <p>loading...</p>
 </template>
 
 <script>

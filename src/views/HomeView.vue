@@ -1,6 +1,9 @@
 <template>
     <div class="home">
         <h1>Web Developing Languages</h1>
+        <div v-if="error">
+            {{ error }}
+        </div>
         <div v-if="languages.length > 0">
             <SingleType :filterLangs="filterLangs" />
             <div v-if="error">
@@ -46,16 +49,16 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
 }
 .home {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 h1 {
     font-family: "Philosopher", sans-serif;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     color: #777;
 }
 input {
