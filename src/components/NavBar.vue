@@ -14,18 +14,17 @@ export default {};
 
 <style>
 .navbarParent {
-    font-family: "Philosopher", sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #23976b;
-    z-index: 1;
+    margin: 30px auto;
+    max-width: 1000px;
 }
 .navbarParent h1 {
     font-size: 30px;
-    color: #fff;
+    color: crimson;
 }
 
 .route a {
@@ -33,15 +32,9 @@ export default {};
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
-    color: #fff;
+    color: crimson;
 }
 .route a.router-link-active {
-    color: #000;
+    color: #23976b;
 }
-
-/* .route {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} */
 </style>

@@ -15,6 +15,7 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(247, 245, 245);
 }
 #app {
     font-family: "Poppins", sans-serif;

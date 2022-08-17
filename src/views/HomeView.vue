@@ -1,13 +1,14 @@
 <template>
     <div class="home">
-        <h1>Web Developing Languages</h1>
         <div v-if="error">
             {{ error }}
         </div>
-        <div v-if="languages.length > 0">
-            <SingleType :filterLangs="filterLangs" />
-            <div v-if="error">
-                <p>{{ error }}</p>
+        <div v-if="languages.length" class="layout">
+            <div>
+                <SingleType :filterLangs="filterLangs" />
+            </div>
+            <div>
+                <TagCloud :languages="languages"></TagCloud>
             </div>
         </div>
         <div v-else>
@@ -15,12 +16,13 @@
                 <SpiNner></SpiNner>
             </p>
         </div>
-        <p>Search</p>
-        <input type="search" v-model="search" placeholder="type to search" />
+        <!-- <p>Search</p>
+        <input type="search" v-model="search" placeholder="type to search" /> -->
     </div>
 </template>
 
 <script>
+import TagCloud from "../components/TagCloud";
 import SpiNner from "../components/SpiNner";
 import SingleType from "../components/SingleType";
 import { computed } from "@vue/runtime-core";
@@ -28,6 +30,7 @@ import getLanguages from "../composables/getLanguages";
 
 export default {
     components: {
+        TagCloud,
         SpiNner,
         SingleType,
     },
@@ -49,24 +52,25 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 h1 {
-    font-family: "Philosopher", sans-serif;
-    text-align: center;
-    margin: 20px;
+    font-family: "Poppins", sans-serif;
     color: #777;
 }
 input {
     width: 50%;
     border: none;
     background-color: #eee;
-    margin: 20px auto;
     padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 input::placeholder {
@@ -78,5 +82,10 @@ p {
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 </style>

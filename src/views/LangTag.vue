@@ -1,23 +1,32 @@
 <template>
-    <h1>Result</h1>
+    <div class="home">
+        <div v-if="error">
+            {{ error }}
+        </div>
+        <div v-if="languages.length" class="layout">
+            <div>
+                <SingleType :filterLangs="filteredLangs"></SingleType>
+            </div>
+            <div>
+                <TagCloud :languages="languages"></TagCloud>
+            </div>
+        </div>
 
-    <div v-if="error">
-        {{ error }}
+        <div v-else>loading...</div>
     </div>
-    <div v-if="languages.length" class="home">
-        <LanguagePosts :language="filteredLangs"></LanguagePosts>
-    </div>
-
-    <div v-else>loading...</div>
 </template>
 
 <script>
-import LanguagePosts from "../components/LanguagePosts";
+import TagCloud from "../components/TagCloud";
+import SingleType from "../components/SingleType";
 import { computed } from "@vue/runtime-core";
 import getLanguages from "../composables/getLanguages";
 
 export default {
-    components: { LanguagePosts },
+    components: {
+        TagCloud,
+        SingleType,
+    },
     props: ["tag"],
     setup(props) {
         let { languages, search, error, load } = getLanguages();
@@ -39,14 +48,12 @@ export default {
     box-sizing: border-box;
 }
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-h1 {
-    font-family: "Philosopher", sans-serif;
-    text-align: center;
-    margin: 20px;
-    color: #777;
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 </style>
