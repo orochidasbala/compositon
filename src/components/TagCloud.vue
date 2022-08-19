@@ -35,23 +35,24 @@ h1 {
     color: #aaa;
     text-align: right;
     margin: 10px;
+    border-bottom: 1px solid #eee;
 }
 .layout {
     text-align: right;
 }
 .tags {
     display: inline-block;
-    width: auto;
-    margin: 10px 10px 0 0;
+
     padding: 10px;
-    background-color: #ddd;
-    border-radius: 15px;
-    font-size: 12px;
 }
 .tags a {
     background-color: transparent;
     text-decoration: none;
-    color: #23976b;
+    color: #aaa;
     font-weight: 500;
+}
+.tags a.router-link-active {
+    color: #23976b;
+    font-weight: 600;
 }
 </style>

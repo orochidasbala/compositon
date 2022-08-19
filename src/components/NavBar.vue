@@ -25,6 +25,7 @@ export default {};
 .navbarParent h1 {
     font-size: 30px;
     color: crimson;
+    font-weight: 500;
 }
 
 .route a {

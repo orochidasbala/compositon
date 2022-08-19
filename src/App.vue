@@ -1,5 +1,7 @@
 <template>
-    <NavBar />
+    <div class="nav">
+        <NavBar />
+    </div>
     <router-view />
 </template>
 
@@ -24,5 +26,10 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     /* text-align: center; */
     color: #2c3e50;
+}
+.nav {
+    border-bottom: 1px solid #ddd;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 </style>

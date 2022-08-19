@@ -78,12 +78,13 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 h1 {
-    font-family: "Philosopher", sans-serif;
     text-align: center;
-    margin: 30px;
-    color: #777;
+    margin: 10px;
+    color: #aaa;
+    font-weight: 500;
 }
 .parent {
     /* display: ; */
@@ -99,6 +100,7 @@ span {
     font-size: 12px;
     text-transform: lowercase;
     letter-spacing: 1px;
+    background-color: transparent;
     color: #777;
 }
 
@@ -117,36 +119,38 @@ span {
     width: 100%;
     display: block;
     text-align: left;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #777;
-    font-weight: bold;
+    font-weight: 400;
+    background-color: transparent;
 }
 input,
 textarea {
     width: 100%;
     display: block;
     border: none;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    background-color: transparent;
     padding: 15px;
     font-size: 14px;
     color: #444;
+    border-bottom: 1px solid #aaa;
 }
 button {
     display: block;
-    width: 150px;
+    width: 100%;
     padding: 15px;
-    margin: 50px auto;
-    margin-bottom: 0;
+    margin: 20px auto;
     background-color: #23976b;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: bold;
+    font-weight: 400;
 }
 </style>

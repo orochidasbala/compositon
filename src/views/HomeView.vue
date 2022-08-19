@@ -85,7 +85,7 @@ p {
 }
 .layout {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
     gap: 20px;
 }
 </style>

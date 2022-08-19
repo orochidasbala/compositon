@@ -1,4 +1,6 @@
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { ref } from "vue";
+import {db} from "../firebase/config"
 
 let getLanguages = ()=> {
     let languages = ref([]);
@@ -6,17 +8,10 @@ let getLanguages = ()=> {
     let error = ref("");
     let load = async () => {
         try {
-            // await new Promise((resolve,reject)=>{
-            //     setTimeout(resolve, 2000)
-            // })
-            let response = await fetch("http://localhost:3000/languages");
-            if (response.status === 404) {
-                throw new Error(
-                    "Ur link is something wrong! Datas not found"
-                );
-            }
-            let datas = await response.json();
-            languages.value = datas;
+            const response = await getDocs(collection(db, "languages"))
+            languages.value = response.docs.map((doc)=>{
+                return {id:doc.id, ...doc.data()}
+            })
         } catch (err) {
             error.value = err.message;
         }
