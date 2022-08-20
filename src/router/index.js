@@ -14,7 +14,7 @@ const routes = [
     path: '/languages/:id',
     name: "Detail",
     component: Detail,
-    // props: true
+    props: true
   },
   {
     path: '/addnew',
