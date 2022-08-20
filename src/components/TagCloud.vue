@@ -42,7 +42,6 @@ h1 {
 }
 .tags {
     display: inline-block;
-
     padding: 10px;
 }
 .tags a {

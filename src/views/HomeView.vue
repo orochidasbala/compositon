@@ -7,7 +7,7 @@
             <div>
                 <SingleType :filterLangs="filterLangs" />
             </div>
-            <div>
+            <div class="tagCloud">
                 <TagCloud :languages="languages"></TagCloud>
             </div>
         </div>
@@ -54,6 +54,12 @@ export default {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+/* .tagCloud {
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    width: 500px;
+} */
 .home {
     display: flex;
     flex-direction: column;

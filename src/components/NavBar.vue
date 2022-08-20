@@ -1,4 +1,5 @@
 <template>
+    <!-- <div class="nav"> -->
     <div class="navbarParent">
         <h1>Programming Languages and Deatils</h1>
         <div class="route">
@@ -6,13 +7,19 @@
             <router-link :to="{ name: 'Addnew' }">Add New</router-link>
         </div>
     </div>
+    <!-- </div> -->
 </template>
 
 <script>
 export default {};
 </script>
 
-<style>
+<style scoped>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .navbarParent {
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -27,9 +34,12 @@ export default {};
     color: crimson;
     font-weight: 500;
 }
-
+.navbarParent div {
+    margin: 0;
+    padding: 0;
+}
 .route a {
-    position: relative;
+    /* position: relative; */
     font-size: 20px;
     text-decoration: none;
     padding: 10px;

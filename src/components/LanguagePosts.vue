@@ -11,11 +11,11 @@
                 tag
             }}</router-link>
         </span>
-        <hr />
+        <!-- <hr /> -->
     </div>
 </template>
 
-<script scoped>
+<script>
 export default {
     props: ["language"],
 };
@@ -26,12 +26,16 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px 5px;
+    border-radius: 15px;
 }
 
 .all {
     font-family: "Poppins", sans-serif;
     max-width: 1000px;
     margin: 30px auto;
+    box-shadow: 1px 1px 10px rgb(196, 196, 196);
 }
 .tags {
     display: inline-block;
@@ -53,9 +57,9 @@ export default {
     /* color: #777; */
     color: #23976b;
 }
-hr {
+/* hr {
     border-top: 1px solid #eee;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+} */
 </style>

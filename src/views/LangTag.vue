@@ -12,11 +12,14 @@
             </div>
         </div>
 
-        <div v-else>loading...</div>
+        <div v-else>
+            <SpiNner></SpiNner>
+        </div>
     </div>
 </template>
 
 <script>
+import SpiNner from "../components/SpiNner";
 import TagCloud from "../components/TagCloud";
 import SingleType from "../components/SingleType";
 import { computed } from "@vue/runtime-core";
@@ -24,6 +27,7 @@ import getLanguages from "../composables/getLanguages";
 
 export default {
     components: {
+        SpiNner,
         TagCloud,
         SingleType,
     },

@@ -1,5 +1,6 @@
 <template>
     <div class="spin"></div>
+    <span></span>
 </template>
 
 <script>
@@ -12,10 +13,10 @@ export default {};
     height: 40px;
     border: 2px solid transparent;
     border-radius: 50%;
-    border-top-color: crimson;
+    border-top-color: #23976b;
     border-bottom-color: crimson;
-    margin: 30px auto;
-    animation: spin 1s infinite;
+    margin: 10px auto;
+    animation: spin 2s infinite;
 }
 @keyframes spin {
     to {

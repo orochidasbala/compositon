@@ -27,9 +27,12 @@ export default {
     /* text-align: center; */
     color: #2c3e50;
 }
-.nav {
-    border-bottom: 1px solid #ddd;
-    max-width: 1000px;
+/* .nav {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 80%;
     margin: 20px auto;
-}
+    background-color: #000;
+} */
 </style>

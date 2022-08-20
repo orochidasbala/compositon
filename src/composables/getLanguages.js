@@ -1,4 +1,4 @@
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, getDoc } from 'firebase/firestore';
 import { ref } from "vue";
 import {db} from "../firebase/config"
 
