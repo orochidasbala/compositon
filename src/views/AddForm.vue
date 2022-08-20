@@ -17,7 +17,7 @@
             @keydown.enter.prevent="handleKeydown"
         />
         <div v-for="tag in tags" :key="tag" class="tags">
-            <div>{{ tag }}</div>
+            {{ tag }}
         </div>
 
         <button type="submit">Add</button>
@@ -27,6 +27,9 @@
 <script>
 import { ref } from "@vue/reactivity";
 import { useRouter } from "vue-router";
+import { addDoc, collection } from "@firebase/firestore";
+import { db } from "@/firebase/config";
+
 export default {
     setup() {
         let router = useRouter(); //this.$router
@@ -45,18 +48,13 @@ export default {
         };
 
         let addNew = async () => {
-            await fetch("http://localhost:3000/languages", {
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json",
-                },
-                body: JSON.stringify({
-                    languageName: languageName.value,
-                    detail: detail.value,
-                    usage: usage.value,
-                    tags: tags.value,
-                }),
-            });
+            let addLanguage = {
+                languageName: languageName.value,
+                detail: detail.value,
+                usage: usage.value,
+                tags: tags.value,
+            };
+            await addDoc(collection(db, "languages"), addLanguage);
             router.push("/");
         };
 
@@ -87,8 +85,6 @@ h1 {
     font-weight: 500;
 }
 .parent {
-    /* display: ; */
-    /* flex-direction: column; */
     width: 50%;
     height: 100%;
     background-color: #eee;
@@ -132,7 +128,6 @@ textarea {
     width: 100%;
     display: block;
     border: none;
-    /* border-radius: 15px; */
     background-color: transparent;
     padding: 15px;
     font-size: 14px;
